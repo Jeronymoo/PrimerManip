@@ -25,5 +25,4 @@ document.getElementById('add').addEventListener('click', function() {
     let item = document.createElement('h4');
     item.appendChild(document.createTextNode(reversed));
     list.appendChild(item);
-    
-});
+  });
