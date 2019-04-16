@@ -1,6 +1,8 @@
 body {
     font-family: 'Lato', sans-serif;
     background-color: #F1F1F1;
+    margin: 0;
+    padding: 0;
 }
 
 #item {
@@ -16,11 +18,11 @@ body {
 
 #add {
     display: block;
-    margin: 25px auto;
+    margin: 28px auto;
     border-style: none;
     background-color: #6D7AEB;
     padding: 10px;
-    width: 90px;
+    width: 100px;
     color: white;
     font-weight: 700;
     border-radius: 5px; 
@@ -29,19 +31,21 @@ body {
 }
 
 #add:hover {
-    background-color: #A9B1F1;
+    background-color: rgb(142, 149, 211);
 }
 
 .app {
     text-align: center;
-    padding: 20px;
     margin: 250px auto;
     background-color: white;
     position: relative;
-    height: 210px;
-    width: 500px;
+    height: 240px;
+    width: 530px;
     box-shadow: 0px 4px 10px rgb(224, 224, 224);
-    border-radius: 15px;
+    border-style: solid;
+    border-color: rgb(202, 202, 202);
+    border-width: .05px;
+    padding-top: 40px;
 }
 
 h4 {
@@ -49,16 +53,26 @@ h4 {
     color: black;
     letter-spacing: 3px;
     position: relative;
-    text-align: center;
+    margin: 0 auto;
     word-break: break-all;
+    line-height: 35px;
+    padding: 0 5px;
+}
+
+.result {
+    background-color: white;
+    width: 530px;
+    border-style: solid;
+    border-width: .05px;
+    border-color: rgb(202, 202, 202);
 }
 
 .space {
     position: absolute;
     height: 1px;
-    width: 500px;
+    width: 530px;
     background-color: lightgray;
-    margin: 190px auto;
+    margin: 205px auto;
     text-align: center;
 }
 
