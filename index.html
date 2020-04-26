@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="icon" href="icon/dnaico.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PrimerManip</title>
+</head>
+<body>
+    <div class="app">
+        <div class="space"></div>
+        <h1>PrimerManip</h1>
+        <p>Paste your sequence and we will modify it for you!</p>
+        <form onsubmit="return false;">
+            <input autocomplete="off" type="text" id="item">
+        </form>
+        <div class="btns">
+            <input type="submit" id="reverse" class="sec" value="Reverse">
+            <input type="submit" id="complement" class="principal" value="Reverse & Complement">
+            <input type="submit" id="replace" class="ter" value="Complement">
+        </div>
+        <div class="result">
+            <h4 id="todo">
+                
+            </h4>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
