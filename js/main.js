@@ -55,7 +55,7 @@ document.getElementById('complement').addEventListener('click', function() {
 
     append(resultado)
     let current_pressed = document.createElement('small')
-    let btn = document.createTextNode('Complemented')
+    let btn = document.createTextNode('Reversed & Complemented')
     current_pressed.appendChild(btn)
     document.getElementById('todo').appendChild(current_pressed)
 })
@@ -67,7 +67,7 @@ document.getElementById('replace').addEventListener('click', function() {
     append(resultado)
 
     let current_pressed = document.createElement('small')
-    let btn = document.createTextNode('Reversed & Complemented')
+    let btn = document.createTextNode('Complemented')
     current_pressed.appendChild(btn)
     document.getElementById('todo').appendChild(current_pressed)
 })
