@@ -30,7 +30,7 @@ let append = function (resultado) {
         document.getElementById('todo').innerHTML = ''
     }
     let list = document.getElementById('todo')
-    let item = document.createElement('p')
+    let item = document.createElement('h4')
     item.appendChild(document.createTextNode(resultado))
     list.appendChild(item)
     
@@ -41,6 +41,11 @@ document.getElementById('reverse').addEventListener('click', function() {
     let resultado = reverseString(primer)
 
     append(resultado)
+
+    let current_pressed = document.createElement('small')
+    let btn = document.createTextNode('Reversed')
+    current_pressed.appendChild(btn)
+    document.getElementById('todo').appendChild(current_pressed)
 })
 
 document.getElementById('complement').addEventListener('click', function() {
@@ -49,6 +54,10 @@ document.getElementById('complement').addEventListener('click', function() {
     let resultado = replaceString(primer_r)
 
     append(resultado)
+    let current_pressed = document.createElement('small')
+    let btn = document.createTextNode('Complemented')
+    current_pressed.appendChild(btn)
+    document.getElementById('todo').appendChild(current_pressed)
 })
 
 document.getElementById('replace').addEventListener('click', function() {
@@ -56,4 +65,9 @@ document.getElementById('replace').addEventListener('click', function() {
     let resultado = replaceString(primer)
 
     append(resultado)
+
+    let current_pressed = document.createElement('small')
+    let btn = document.createTextNode('Reversed & Complemented')
+    current_pressed.appendChild(btn)
+    document.getElementById('todo').appendChild(current_pressed)
 })
