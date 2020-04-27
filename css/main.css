@@ -76,3 +76,14 @@ p {
     outline: none;
     cursor: pointer;
 }
+
+h4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+small {
+    color: gray;
+}

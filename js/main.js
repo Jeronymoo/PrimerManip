@@ -36,16 +36,19 @@ let append = function (resultado) {
     
 }
 
+let append_btn = function (text) {
+    let current_pressed = document.createElement('small')
+    let btn = document.createTextNode(text)
+    current_pressed.appendChild(btn)
+    document.getElementById('todo').appendChild(current_pressed)
+}
+
 document.getElementById('reverse').addEventListener('click', function() {
     let primer = document.getElementById('item').value.toUpperCase()
     let resultado = reverseString(primer)
 
     append(resultado)
-
-    let current_pressed = document.createElement('small')
-    let btn = document.createTextNode('Reversed')
-    current_pressed.appendChild(btn)
-    document.getElementById('todo').appendChild(current_pressed)
+    append_btn('Reversed')
 })
 
 document.getElementById('complement').addEventListener('click', function() {
@@ -54,10 +57,7 @@ document.getElementById('complement').addEventListener('click', function() {
     let resultado = replaceString(primer_r)
 
     append(resultado)
-    let current_pressed = document.createElement('small')
-    let btn = document.createTextNode('Reversed & Complemented')
-    current_pressed.appendChild(btn)
-    document.getElementById('todo').appendChild(current_pressed)
+    append_btn('Reversed & Complemented')
 })
 
 document.getElementById('replace').addEventListener('click', function() {
@@ -65,9 +65,5 @@ document.getElementById('replace').addEventListener('click', function() {
     let resultado = replaceString(primer)
 
     append(resultado)
-
-    let current_pressed = document.createElement('small')
-    let btn = document.createTextNode('Complemented')
-    current_pressed.appendChild(btn)
-    document.getElementById('todo').appendChild(current_pressed)
+    append_btn('Complemented')
 })
