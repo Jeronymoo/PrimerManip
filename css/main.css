@@ -11,6 +11,9 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    margin: auto;
+    max-width: 1100px;
 }
 
 h1 {
@@ -40,41 +43,59 @@ p {
 
 .principal {
     border-style: none;
-    background-color: #6D7AEB;
+    background-color: black;
+    border-radius: 50px;
     padding: 10px;
     width: 180px;
     height: 40px;
     color: white;
-    font-weight: 700;
-    border-radius: 5px; 
+    font-weight: 700; 
     outline: none;
     cursor: pointer;
 }
 
 .sec {
     border-style: none;
-    background-color: #CCC630;
+    background-color: #6A6A6A;
+    border-radius: 50px;
     padding: 10px;
     width: 100px;
     height: 40px;
     color: white;
     font-weight: 700;
-    border-radius: 5px; 
     outline: none;
     cursor: pointer;
 }
 
 .ter {
     border-style: none;
-    background-color: #56944C;
+    background-color: #6A6A6A;
+    border-radius: 50px;
     padding: 10px;
     width: 100px;
     height: 40px;
     color: white;
     font-weight: 700;
-    border-radius: 5px; 
     outline: none;
     cursor: pointer;
+}
+
+.principal:hover {
+    background-color: #DEDEDE;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+.sec:hover {
+    background-color: #DEDEDE;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+.ter:hover {
+    background-color: #DEDEDE;
+    color: black;
+    transition-duration: 0.4s;
 }
 
 h4 {
@@ -82,8 +103,9 @@ h4 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 small {
-    color: gray;
+    color: #C1C1C1;
 }
