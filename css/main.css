@@ -120,6 +120,11 @@ small {
         align-content: center;
     }
 
+    h1 {
+        font-size: 50px;
+        margin: 50px 0 0 0;
+    }
+
     #item {
         width: 350px;
     }
